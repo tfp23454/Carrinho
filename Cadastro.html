@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <!-- Custom styles for this example -->
+    <link rel="stylesheet" href="estilologin.css"/>
+  </head>
+
+  <body>
+    <!-- Cabeçalho-->
+    <nav class="container-fluid">
+          <a href="./" class="contrast" onclick="event.preventDefault()"><strong>Cabeçalho</strong></a>
+    </nav>
+
+    <!--Cabeçalho -  Fim>
+    <!Container -->
+    <div class="container">
+      <div class="caixa">
+        <div class="conteudo">
+          <hgroup>
+            <h1 id="head_cadastro">Cadastro</h1>
+            <h2 id="slogan">Planeje.Faça</h2>
+          </hgroup>
+          <form>
+          <div class="grid_inputs">
+            <div class="container_input" id="nome">
+              <label for="nome" >Nome</label>
+                <input class="esquerda"
+                type="text"
+                name="nome"
+                placeholder="Nome"
+                aria-label="Login"
+                autocomplete="nickname"
+                required
+              />
+            </div>
+            <div class="container_input" id="senha">
+              <label for="password"  id="label_d">Senha</label>
+              <input class="direita"
+                type="password"
+                name="password"
+                placeholder="Senha"
+                aria-label="Password"
+                required
+              />
+            </div>
+            <div class="container_input" id="email">
+              <label for="Email" >E-mail</label>
+              <input class="esquerda"
+                type="text"
+                name="Email"
+                placeholder="E-mail"
+                aria-label="Login"
+                required
+              />
+            </div>
+            <div class="container_input" id="confirme">
+              <label for="confirma_senha">Confirme a senha</label>
+              <input class="direita"
+                type="password"
+                name="confirma_senha"
+                placeholder="Confirme a senha"
+                aria-label="Password"
+                required
+              />
+            </div>
+          <div class="container_input" id="telefone">
+            <label for="Telefone" >Telefone</label>
+            <input class="esquerda"
+              type="text"
+              name="Telefone"
+              placeholder="Telefone"
+              aria-label="Login"
+              autocomplete="nickname"
+              required
+            /><br>
+          </div>
+          <button id="botao_criar">Criar Conta</button>
+          </div> <!--Inputs-->
+          </form>
+        </div><!--Conteudo-->
+      </div><!--Caixa-->
+    </div>
+    <!-- Container -->
+  </body>
+</html>
