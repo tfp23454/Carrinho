@@ -1,0 +1,165 @@
+/*Variáveis*/
+$amarelo_claro: #FFE573;
+$amarelo: #FEC900F6;
+$hover_criarc: black;
+      .caixa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+      
+      .conteudo {
+        text-align: center;
+      }
+      #head_cadastro
+      {
+        font-family: 'Bungee', cursive;
+        color: $amarelo;
+      }
+      .grid_cadastro, .grid_login {
+        display: grid;
+        font-family: 'Bungee', cursive;
+        font-size: 120%;
+        grid-template-columns: repeat(2,35ex);
+        grid-template-rows: repeat(4, 12ex);
+        border-radius: 5px;
+        background-color: $amarelo;
+        box-shadow: 10px 10px 8px grey;
+      }
+      
+      .container_input_cadastro {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 1%;
+      }
+      
+      input {
+        position: relative;
+        outline: none;
+        padding: 5%;
+        width: 85%;
+        height: 5%;
+        border-radius: 8px;
+        border-style: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;
+        padding-left: 25px;
+        background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left white;
+        background-size: 20px;
+      }
+    #senha
+    {
+      grid-area: 1/2/1/2;
+    }
+    #confirme
+    {
+      grid-area: 2/2/2/2;
+    }
+    #CPF
+    {
+      grid-area: 3/2/3/2;
+    }
+    #nome
+    {
+      grid-area: 1/1/1/1;
+    }
+    #email
+    {
+      grid-area: 2/1/2/1;
+    }
+    #telefone
+    {
+      grid-area: 3/1/3/1;
+    }
+    #nome,#email,#telefone
+    {
+      margin-left: 5%;
+    }
+    #login
+    {
+      grid-area: 1/1/1/2;
+      transform: translateX(50%);
+    }
+    #senha_login
+    {
+      grid-area: 2/1/2/2;
+      transform: translateX(50%);
+    }
+    //Botões
+    #extra_login
+    {
+      grid-area: 3/1/3/2;
+      margin-top: 10%;
+
+    }
+    .extra_cadastro
+    {
+      margin: 5%;
+      grid-area: 4/1/4/2;
+      transform: translate(55%, -75%);
+
+      .botoes_cadastro {
+        width: 95%;
+        height: 75%;
+        top: 45%;
+        left: 50%;
+        margin-top: 10%;
+      }
+      
+      .botao_criarconta {
+        position: relative;
+      }
+      
+      a {
+        display: block;
+        line-height: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        background: #333;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 3px solid #333;
+        transition: all .35s;
+      
+        &:hover {
+          width: 90%;
+          border: 3px solid $hover_criarc;
+          background: transparent;
+          color: $hover_criarc;
+      
+          & + .icon {
+            border: 3px solid $hover_criarc;
+            right: -25%;
+          }
+        }
+      }
+      
+      .icon {
+        width: 50px;
+        height: 50px;
+        border: 3px solid transparent;
+        position: absolute;
+        transform: rotate(45deg);
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transition: all .35s;
+      
+        svg 
+        {
+          width: 30px;
+          position: absolute;
+          top: calc(50% - 15px);
+          left: calc(50% - 15px);
+          transform: rotate(-45deg);
+          fill: $hover_criarc;
+          transition: all .35s;
+        }
+      }
+      
+    }
+ 
