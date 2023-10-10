@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro</title>
+    <!-- CSS/Fontes -->
+    <link rel="stylesheet" href="estilologin.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <!-- Cabeçalho-->
+    <nav class="container-fluid">
+      <a href=""><strong>Cabeçalho</strong></a>
+    </nav>
+
+    <!--Cabeçalho -  Fim>
+    <!Container -->
+    <div class="container">
+      <div class="caixa">
+        <div class="conteudo">
+          <hgroup>
+            <h1 id="head_cadastro">Cadastro</h1>
+          </hgroup>
+          <form id="form_cadastro" method="post" action="cadastro_usuario.php">
+          <div class="grid_cadastro">
+            <div class="container_input_cadastro" id="nome">
+              <label for="nome">Nome</label>
+                <input class="esquerda"
+                type="text"
+                name="nome"
+                placeholder="Nome"
+                aria-label="Login"
+                autocomplete off
+                tabindex="1"
+                required
+              />
+            </div>
+            <div class="container_input_cadastro" id="CPF">
+              <label for="CPF">CPF</label>
+              <input class="direita"
+              type="text"
+              name="CPF"
+              placeholder="CPF"
+              aria-label="Login"
+              autocomplete=off
+              required
+              maxlength="11"
+              tabindex="4"
+              />
+            </div>
+              <div class="container_input_cadastro" id="email">
+              <label for="Email" >E-mail</label>
+              <input class="esquerda"
+                type="text"
+                name="email"
+                tabindex="2"
+                placeholder="E-mail"
+                aria-label="Login"
+                required
+              />
+              </div>
+            <div class="container_input_cadastro" id="senha">
+              <label for="password"  id="label_d">Senha</label>
+              <input class="direita"
+                type="password"
+                name="senha"
+                placeholder="Senha"
+                aria-label="Password"
+                tabindex="5"
+                required
+              />
+            </div>
+            <div class="container_input_cadastro" id="telefone">
+            <label for="Telefone" >Telefone</label>
+            <input class="esquerda"
+              type="text"
+              name="telefone"
+              placeholder="Telefone"
+              aria-label="Login"
+              autocomplete="nickname"
+              required
+              maxlength="14"
+              tabindex="3"
+            />
+            </div>
+            <div class="container_input_cadastro" id="confirme">
+              <label for="confirma_senha">Confirme a senha</label>
+              <input class="direita"
+                type="password"
+                name="confirma_senha"
+                placeholder="Confirme a senha"
+                aria-label="Password"
+                required
+                tabindex="6"
+              />
+            </div>
+          </form>
+          <div class="extra_cadastro">
+              <div class="botoes_cadastro">
+                <div class="botao_criarconta">
+                  <a href="#" onClick="document.getElementById('form_cadastro').submit();">Criar Conta</a>                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                      <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 
+                      4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 
+                      0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 
+                      0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                    </svg>
+                  </div>
+                </div>
+                <a href="youtube.com" id="link_login">Já tenho uma conta</a>
+              </div>
+              </div>
+          </div>
+          </div> <!--Conteudo-->
+        </div>
+      </div><!--Caixa-->
+    </div>
+    <!-- Container -->
+  </body>
+</html>
